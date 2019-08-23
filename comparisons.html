@@ -13,15 +13,39 @@
 </head>
 
 <body>
-  <dl class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <h1 class="display-4">Latitudinal Comparisons</h1>
-      </div>
-      <div class="col-md-1"></div>
-      
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Max Temperature</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+          </ul>
+        </div>
+</nav>
+  <dl class="row">      
       <div class="comparison-charts">
         <div class="col-md-12">
+              <h1 class="display-4">Latitudinal Comparisons</h1>
+        </div>
+        <hr>
+      <div class="col-md-12">
           <p>Click any of the following to see an in depth analysis.</p></div>
       <figure class="figure">
           <img src="Images/LatVsClouds.png" class="figure-img img-fluid rounded" alt="lat vs cloud graph">
@@ -40,5 +64,5 @@
           <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
       </figure>
       </div>
-    </dl>
+  </dl>
 </body>
