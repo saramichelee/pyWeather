@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Analysis</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Latitude</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown active">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Max Temperature</a>
+                        <a class="dropdown-item" href="#">Humidity</a>
+                        <a class="dropdown-item" href="#">Cloudiness</a>
+                        <a class="dropdown-item" href="#">Wind Speed</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Comparison<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Data</a>
+                    </li>
+                  </ul>
+                </div>
+</nav>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Latitude vs. Cloud Coverage
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <img src="Images/LatVsClouds.png"><br>
+        <p>There is a biased toward coverage on the increments of 5.<br>
+        On the day the data was retrieved it was uncommon to have no wind coverage just north of the equator (latitude 0 to 15).
+    </p>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Latitude vs. Humidty %
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+          <img src="Images/LatVsHumidity.png"><br>
+          <p>It is the least humid near the Tropic of Cancer and Tropic of Capricorn (23.5 degrees above and below the equator respectively).      
+            </p>
+          </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Latitude vs. Temperature
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+          <img src="Images/LatVsTemp.png"></html><br>
+          A clear curve shows that temperatures are generally hotter towards the equator (latitude 0).
+        </div>
+    </div>
+  </div>
+  <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Latitude vs. Wind
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+    <img src="Images/LatVsWind.png"><br>
+    <p>The day the data was retrieved it was more windy north of the equator (positive latitudes).
+        </p>
+    </div>
+        </div>
+      </div>
+</div>
+
+</body>

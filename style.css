@@ -10,6 +10,10 @@
     font-weight: bold;
 }
 
+dl {
+    background: lightgrey;
+}
+
 .display-4 {
     padding: 10px;
     font-family: serif;
@@ -17,18 +21,63 @@
     color: #17a2b8;
 }
 
-.col-md-8 {
-    /* background: grey; */
+.col-md-7 {
+    background:whitesmoke;
+    position: relative;
+    top: 10px;
+    left: 3%;
+    /* right: 30 px; */
+}
+.col-md-10 {
+    background:whitesmoke;
+    position: relative;
+    top: 10px;
+    /* left: 3%; */
+    width: 100%;
+
+    /* right: 30 px; */
+}
+.col-md-4 {
+    background: whitesmoke;
+    position: relative;
+    top: 10px;
+    right: 3%;
+    /* left: 20px; */
 }
 
-.col-md-4 {
-    /* background: grey; */
+.float-left {
+    width: 50%;
 }
+
 blockquote {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0 0 1rem;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-right: 10%;
     margin-bottom: 10px;
     margin-left: 5%;
+}
+/* visualizaiton styles */
+#accordion {
+    padding: 3%;
+}
+
+.btn-link {
+    font-family: serif;
+    font-size: 24px;
+    color: #17a2b8;
+    /* font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial; */
+}
+.comparison-charts {
+    background: whitesmoke;
+    position: relative;
+    top: 30px;
+    left: 3%;
+    right: 3%;
+    padding: 15px;
 }
