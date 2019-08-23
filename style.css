@@ -9,3 +9,10 @@
     color: white;
     font-weight: bold;
 }
+
+.display-4 {
+    padding: 10px;
+    font-family: serif;
+    font-size: 30px;
+    color: #17a2b8;
+}
