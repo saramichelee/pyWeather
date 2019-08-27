@@ -24,6 +24,10 @@ dl {
     font-size: 35px;
     color: #17a2b8;
 }
+.col-md-4 img {
+    padding: 5px;
+    width: 50%;
+}
 
 .col-md-7 {
     background:whitesmoke;
@@ -112,3 +116,10 @@ blockquote {
     .col-md-4 {
         padding-left: 40px;
       }
+    .col-md-7 {
+        max-width: 95%;
+    }
+    .col-md-4 img {
+        padding: 3px;
+        width: 25%;
+    }
