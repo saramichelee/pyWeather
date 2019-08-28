@@ -109,12 +109,18 @@ blockquote {
 }
 
 /* Data styles */
-/* .col-md-12 .tabledata {
-    max-width: 100%;
-} */
-.table {
+.data {
+        background: lightgrey;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+}
+table {
     padding: 3%;
     font-size: 12px;
+    position: relative;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -135,3 +141,12 @@ blockquote {
         padding: 2%;
         font-size: 10px;
     }
+    .container .data {
+        background: lightgrey;
+        padding-top: 20px;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        margin-right: 10px;
+        margin-left: 10px;
+    } 
