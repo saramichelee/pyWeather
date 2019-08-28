@@ -67,7 +67,6 @@ blockquote {
 }
 
 
-
 /* visualizaiton styles */
 #accordion {
     /* padding: 3%; */
@@ -109,6 +108,15 @@ blockquote {
     align-content: center;
 }
 
+/* Data styles */
+/* .col-md-12 .tabledata {
+    max-width: 100%;
+} */
+.table {
+    padding: 3%;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
     .col-md-1 {
       display:none ;
@@ -122,4 +130,8 @@ blockquote {
     .col-md-4 img {
         padding: 3px;
         width: 25%;
+    }
+    .table {
+        padding: 2%;
+        font-size: 10px;
     }
